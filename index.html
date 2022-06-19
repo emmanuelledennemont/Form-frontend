@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="./js/main.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <title>Formulaire</title>
+</head>
+
+<body>
+    
+        <div class="contact__form">
+            <h1>Formulaire</h1>
+            <div class="form__group">
+                <form id="form">
+                    <div class="input__group">
+                        <input class="element" type="text" name="firstname" id="firstname" placeholder="Nom">
+                    </div>
+                    <div class="input__group">
+                        <input class="element" type="text" name="lastaname" id="lastname"  placeholder="Prénom">
+                    </div>
+                    <div class="input__group">
+                        <input class="element" type="email" name="email" id="email" placeholder="Email">
+                    </div>
+                    <div class="message">
+                        <textarea class="textarea" name="message" id="message" placeholder="Send your message" minlength="3" maxlength="500"></textarea>
+                    </div>
+                    <span class="textarea__count">0/500(Max Character 100)</span>
+                    <div class="btn__submit">
+                        <button class="btn__form" type="submit">Envoyer</button>
+                    </div>
+                </form>
+            </div>
+                <div class="btn__group">
+                    <div>
+                    <button id="displayText" class="btn__modal">Afficher le texte</button>
+                    </div>
+                    <div>
+                    <button id="hideText" class="btn__modal">Fermer le texte</button>
+                    </div>
+                    <div>
+                    <button id="displayHideText" class="btn__modal">Afficher et Fermer</button>
+                    </div>
+                </div>  
+                 <div class="secret__text">
+                    <p id="text"class="hidden">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. In iste, harum porro illo at voluptatem
+                        dicta quibusdam et recusandae sequi nihil magni ea temporibus? Quis consequuntur omnis nam adipisci
+                        nulla.
+                        que assumenda molestias veritatis quidem cum, numquam inventore, ab impedit culpa nobis iusto
+                        asperiores vel provident eos! Nesciunt quasi minus officia temporibus maiores qui tempore.
+                    </p>
+                </div>
+        </div>
+</body>
+</html>
